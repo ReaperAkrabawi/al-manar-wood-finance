@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Al Manar Wood Finance",
+    "slug": "mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "almanar",
+    "userInterfaceStyle": "automatic",
+    "supportsRTL": true,
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#180D04"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.almanar.woodfinance",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSFaceIDUsageDescription": "Allow Al Manar Finance to use Face ID for quick sign-in and app unlock.",
+        "NSMicrophoneUsageDescription": "Allow Al Manar Finance to use the microphone for voice entry commands."
+      }
+    },
+    "android": {
+      "package": "com.almanar.woodfinance",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#180D04"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      "expo-secure-store",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow Al Manar Finance to use Face ID for quick sign-in and app unlock."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Al Manar Finance to access your photos for receipt attachments.",
+          "cameraPermission": "Allow Al Manar Finance to use the camera for receipt photos."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow Al Manar Finance to use the microphone for voice entry commands."
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cb3252a6-bdd1-4048-8d3f-55b66ceaf277"
+      }
+    }
+  }
+}

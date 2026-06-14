@@ -1,0 +1,2 @@
+# Copy to .dev.vars for local `npm run dev` (never commit .dev.vars)
+GEMINI_API_KEY=your-gemini-api-key-from-aistudio-google-com
